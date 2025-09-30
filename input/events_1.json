@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "sheeps": 4,
+    "states": "open",
+    "temperature": 25.5
+  },
+  {
+    "id": "2",
+    "sheeps": 5,
+    "states": "closed",
+    "temperature": 26.0
+  },
+  {
+    "id": "3",
+    "sheeps": 3,
+    "states": "open",
+    "temperature": 24.8
+  },
+  {
+    "id": "4",
+    "sheeps": 6,
+    "states": "closed",
+    "temperature": 25.2
+  }
+]
