@@ -8,7 +8,6 @@ Aggregator filter release notes
 ### Changed
 - Add CI/CD workflows: create-release.yaml (Docker Hub publishing), ci.yaml (PR testing), security-scan.yaml
 - Bump openfilter dependency to >=0.1.27
-- Update Makefile IMAGE to Docker Hub path
 
 
 ## v1.1.3 - 2025-09-29
