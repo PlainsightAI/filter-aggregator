@@ -2,6 +2,8 @@
 # Repo-specific variables
 # ---------------------------------
 
+IMAGE ?= plainsightai/openfilter-aggregator
+
 # Define these variables for consistency in the repo
 REPO_NAME ?= filter-aggregator
 REPO_NAME_SNAKECASE ?= filter_aggregator

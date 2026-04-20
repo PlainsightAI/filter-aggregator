@@ -3,6 +3,13 @@ Aggregator filter release notes
 
 ## [Unreleased]
 
+## v1.1.4 - 2026-04-15
+
+### Changed
+- Add CI/CD workflows: create-release.yaml (Docker Hub publishing), ci.yaml (PR testing), security-scan.yaml
+- Bump openfilter dependency to >=0.1.27
+
+
 ## v1.1.3 - 2025-09-29
 ### Changed
 - Updated documentation
