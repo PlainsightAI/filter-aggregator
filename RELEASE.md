@@ -1,4 +1,17 @@
-# v1.1.6
+# Changelog
+Aggregator filter release notes
+
+## [Unreleased]
+
+## v1.1.7 - 2026-08-04
+
+### Changed
+- Update `openfilter[all]` to `>=1.2.1`.
+- Grant `id-token: write` in `create-release.yaml` so the public release workflow can produce a keyless (cosign) SBOM attestation for the published image (once the shared SBOM steps land).
+- Fix the `RELEASE.md` header (`# Changelog` first line; the stray `# v1.1.6` H1 broke the changelog-parser).
+- Pin the Docker base to `python:3.11.12-slim` (was `python:3.11-slim`).
+- Fix the `docker-compose.yaml` utility images (were the malformed `openfilter-video-in`/`webvis` + `-aggregator` concatenation) and point them at `containers.openfilter.io/plainsightai/openfilter-{video-in,webvis}:1.2.1`.
+- Update dev-tooling floors (`setuptools>=83.0.0`) and switch dev pins to range pins.
 
 ## v1.1.6 - 2026-04-23
 
