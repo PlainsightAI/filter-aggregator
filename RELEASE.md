@@ -19,6 +19,7 @@ Aggregator filter release notes
 - Bump openfilter to 1.1.1
 - Bump openfilter to 1.1.2
 - Bump the openfilter dependency to 1.2.0
+- Bump the openfilter dependency to 1.2.1
 
 ## v1.1.5 - 2026-04-20
 
