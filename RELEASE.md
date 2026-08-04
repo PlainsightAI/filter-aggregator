@@ -16,9 +16,8 @@ Aggregator filter release notes
 ## v1.1.6 - 2026-04-23
 
 ### Changed
-- Update openfilter SDK, align CI workflow with shared release gate (source-paths)
+- Update the openfilter dependency to `>=0.1.30`, and align the CI workflow with the shared release gate (source-paths).
 - Fix release workflow secret names: `PYPI_API_TOKEN` → `PLAINSIGHT_PYPI_TOKEN`, `DOCKERHUB_TOKEN` → `DOCKERHUB_ACCESS_TOKEN` (org-level secret names). Without this the PyPI / Docker Hub tokens resolved to empty and no package has been published since the migration.
-- Update openfilter dependency to `>=0.1.30`.
 
 ## v1.1.5 - 2026-04-20
 
@@ -31,7 +30,7 @@ Aggregator filter release notes
 
 ### Changed
 - Add CI/CD workflows: create-release.yaml (Docker Hub publishing), ci.yaml (PR testing), security-scan.yaml
-- Bump openfilter dependency to >=0.1.27
+- Update openfilter dependency to >=0.1.27
 
 
 ## v1.1.3 - 2025-09-29
