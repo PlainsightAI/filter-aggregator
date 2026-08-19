@@ -3,9 +3,15 @@ Aggregator filter release notes
 
 ## [Unreleased]
 
+## v1.1.9 - 2026-08-20
+
 ### Changed
 
-- Bump the openfilter dependency to 1.3.0
+- Update the openfilter dependency to 1.3.0
+- Add Python 3.14 support: raise the `requires-python` ceiling to `<3.15`; the CI test matrix now runs 3.10–3.14.
+- Install the filter from the `VERSION` file in the `Dockerfile` (was a hardcoded
+  `filter-aggregator==1.1.3` pin, which shipped stale code in every image) and bump the
+  `openfilter-aggregator` image pin in `docker-compose.yaml` to `1.1.9`.
 
 ## v1.1.8 - 2026-08-10
 

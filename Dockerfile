@@ -3,9 +3,18 @@
 # and /app (WORKDIR) + /app/logs — so none of that is repeated here.
 FROM plainsightai/openfilter-base:py3.11
 
-# install + package…
-RUN pip install --no-cache-dir --upgrade pip \
- && pip install --no-cache-dir "filter-aggregator==1.1.3"
+# Install pip + filter-aggregator at version from VERSION file
+RUN --mount=type=bind,source=VERSION,target=/tmp/VERSION,ro \
+    set -eux; \
+    RAW="$(head -n1 /tmp/VERSION)"; \
+    # strip optional leading v/V and whitespace
+    PKG_VERSION="$(printf '%s' "$RAW" | tr -d ' \t\r\n' | sed 's/^[vV]//')"; \
+    [ -n "$PKG_VERSION" ] || { echo "VERSION file is empty"; exit 1; }; \
+    pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir \
+      --index-url https://python.openfilter.io/simple \
+      --extra-index-url https://pypi.org/simple \
+      "filter-aggregator==${PKG_VERSION}"
 
 USER appuser
 CMD ["python", "-m", "filter_aggregator.filter"]
