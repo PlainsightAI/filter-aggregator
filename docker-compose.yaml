@@ -10,7 +10,7 @@ services:
       - ./data/sample-video.mp4:/video.mp4:ro
 
   aggregator_filter:
-    image: containers.openfilter.io/plainsightai/openfilter-aggregator:1.1.8
+    image: containers.openfilter.io/plainsightai/openfilter-aggregator:1.1.9
     environment:
       LOG_LEVEL: ${LOG_LEVEL:-}
       FILTER_ID: AggregatorFilter
