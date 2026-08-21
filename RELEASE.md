@@ -3,7 +3,7 @@ Aggregator filter release notes
 
 ## [Unreleased]
 
-## v1.1.9 - 2026-08-20
+## v1.1.9 - 2026-08-21
 
 ### Changed
 
