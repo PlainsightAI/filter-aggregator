@@ -2,6 +2,7 @@
 title: Aggregator
 sidebar_label: Overview
 sidebar_position: 1
+slug: /filters/aggregator/overview
 ---
 
 The **Aggregator** is a powerful filter that aggregates numeric and categorical data from upstream filters. It supports various aggregation operations and can work with multiple upstream producers and downstream consumers.
