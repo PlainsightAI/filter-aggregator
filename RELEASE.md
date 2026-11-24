@@ -3,6 +3,8 @@ Aggregator filter release notes
 
 ## [Unreleased]
 
+## v1.1.12 - 2026-11-24
+
 ### Changed
 
 - Bump the openfilter dependency to 1.5.0
